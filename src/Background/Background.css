@@ -1,4 +1,5 @@
 .Background {
+    padding: 1rem;
     max-width: 500px;
     min-height: 100px;
     background-color: lightgray;

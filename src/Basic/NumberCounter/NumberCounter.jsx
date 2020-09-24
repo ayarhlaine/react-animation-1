@@ -9,8 +9,10 @@ function NumberCounter() {
     return (
         <div className="NumberCounter">
             <Background>
-            <animated.div className="NumberCounter__value">
-                {props.number.interpolate((number) => `${parseInt(number.toFixed(2) * 100)} Students`)}</animated.div>
+            <div className="NumberCounter__value">
+                <animated.span>{props.number.interpolate((number) => `${parseInt(number.toFixed(2) * 100)}`)}</animated.span>
+                <span>&#8451;</span>
+            </div>
             </Background>
         </div>
     )

@@ -4,7 +4,7 @@ import Background from '../../Background/Background';
 import { useTimer } from '../../hooks/toggle.hook';
 
 function FadeIn() {
-    const toggle = useTimer(2000);
+    const toggle = useTimer();
     const props = useSpring({opacity: toggle ? 0 :1, from: {opacity: toggle ? 1 : 0}})
     return (
         <Background >

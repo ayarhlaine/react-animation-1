@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-export function useTimer(timerSec = 1000) {
+export function useTimer(timerSec = 3000) {
     const [toggle, setToggle] = useState(false);
     useEffect(() => {
         const intervalID = setInterval(() => {

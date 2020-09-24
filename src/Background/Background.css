@@ -1,7 +1,7 @@
 .Background {
     max-width: 500px;
     min-height: 100px;
-    background-color: gray;
+    background-color: lightgray;
     display: grid;
     place-items: center;
 }

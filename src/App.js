@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Basic from './Basic/Basic';
-import Card from './useSpring/Card/Card';
 
 function App() {
   return (

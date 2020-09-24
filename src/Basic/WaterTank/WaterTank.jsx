@@ -10,16 +10,17 @@ function getRandomArbitrary(min, max) {
 function WaterTank() {
     const toggle = useTimer(2000);
     const [current, setCurrent] = useState(0);
-    const [next, setNext] = useState(0);
-
+    const [next, setNext] = useState(getRandomArbitrary(0, 100));
     useEffect(() => {
-        setCurrent(next);
-        setNext(getRandomArbitrary(0, 100));
+        if(toggle){
+            setCurrent(next);
+            setNext(getRandomArbitrary(0, 100));
+        }
+        // eslint-disable-next-line
     },[toggle]);
 
     const { number } = useSpring({ number: next, from: { number: current }, duration: 9000 })
     const percentage = (number) => `${number.toFixed(0)}%`;
-    const getValue = (number) => `${number.toFixed(0)}%`;
     return (
         <Background >
         <animated.div className="WaterTank">

@@ -5,7 +5,7 @@ import { useTimer } from '../../hooks/toggle.hook';
 import './NumberCounter.css';
 function NumberCounter() {
     const toggle = useTimer();
-    const props = useSpring({ number: toggle ? 1 : 0, from: { number: toggle ? 0 : 1 } })
+    const props = useSpring({ number: toggle ? 1 : 0, from: { number: toggle ? 0 : 1 }, duration: 3000 })
     return (
         <div className="NumberCounter">
             <Background>

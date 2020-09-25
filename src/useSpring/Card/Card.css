@@ -1,6 +1,11 @@
-.Card{
-    width: 20ch;
-    height: 20ch;
+.Card {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.Card__card{
+    width: 60%;
+    height: 80%;
     background: grey;
     border-radius: 5px;
     background-size: cover;

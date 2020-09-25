@@ -7,9 +7,9 @@ function Card() {
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
     const imageURL = process.env.PUBLIC_URL+"/images/myimage.jpg";
     return (
-        <div>
+        <div className='Card'>
             <animated.div
-            class="Card"
+            class="Card__card"
             onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
             onMouseLeave={() => set({ xys: [0, 0, 1] })}
             style={{ 

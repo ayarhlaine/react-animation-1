@@ -6,7 +6,6 @@ import WaterTank from './WaterTank/WaterTank';
 function Basic() {
     return (
         <div className="Basic">
-           <h2>Basic</h2>
            <SectionTitle  title="Fade In / Fade Out"/>
            <FadeIn />
            <SectionTitle  title="Number Counter"/>

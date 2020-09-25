@@ -1,6 +1,8 @@
 .App{
-  padding: 1rem;
 }
 .App__title{
   text-align: center;
+}
+.App__body{
+  padding: 1rem;
 }

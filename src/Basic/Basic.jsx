@@ -3,6 +3,7 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import FadeIn from './FadeIn/FadeIn';
 import NumberCounter from './NumberCounter/NumberCounter';
 import WaterTank from './WaterTank/WaterTank';
+import './Basic.css'
 function Basic() {
     return (
         <div className="Basic">

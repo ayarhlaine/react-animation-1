@@ -3,6 +3,7 @@ import './App.css';
 import Basic from './Basic/Basic';
 import Nav from './Nav/Nav';
 import Card from './useSpring/Card/Card';
+import Chooser from './useSpring/Chooser/Chooser';
 
 function App() {
   const [activeTab, setActiveTab] = React.useState('basic');
@@ -12,6 +13,7 @@ function App() {
       <div className="App__body">
         { activeTab === 'basic' && <Basic />}
         { activeTab === '3d-card' && <Card />}
+        { activeTab === 'use-spring' && <Chooser />}
       </div>
     </div>
   );
